@@ -98,15 +98,6 @@ const displayDetails = (meal) => {
     console.log(meal);
     console.log(meal.strYoutube);
     const detailsDiv = document.getElementById("category-container");
-    detailsDiv.innerHTML = `
-    <div class="w-full mx-auto">
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">${meal.strMeal}</h3>
-        <img class="rounded-t-lg" src="${meal.strMealThumb}" alt="" />
-        <p class="text-gray-700 dark:text-gray-400">Instruction: ${meal.strInstructions}</p>
-        <p class="text-gray-700 dark:text-gray-400">Ingredients: ${meal.strInstructions}</p>
-        <iframe width="560" height="315" src="${meal.strYoutube}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    `;  
 };
 
 
